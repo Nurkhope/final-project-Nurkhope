@@ -1,0 +1,1 @@
+Tugelbayev Nurkhat 190107080
