@@ -10,29 +10,55 @@ body {
   line-height: 1.55;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #000000;
-  position: fixed;
-  width:100%;
-  top: 0;
-  display:flex;
-  justify-content:center;
-  z-index:1;
+.navmain{
+  height: 50px;
+  background: hsl(0,0%,0%);
+  width: 100%;
+  color: hsl(0,0%,100%);
+  margin-bottom: 40px;
 }
 
+.nav{
+  max-width: 1226px;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.navbar{
+  max-width: 986px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
 /* Style the navigation bar links */
-.navbar a {
-  color: #CCCCCC;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  width:10%;
+@media (min-width: 1600px).navbar a {
+  font-size: 15px
+}
+
+.navbar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 100%;
+    color: hsla(0,0%,100%,0.8);
+    white-space: nowrap;
+    flex: 0 0 auto;
+    padding: 0px 15px;
+    flex-grow: 1;
 }
 
 /* Change color on hover */
 .navbar a:hover {
-  background:hsla(0,0%,100%,0.15);
+  background: hsla(0,0%,100%,0.15);
   color: white;
 }
 
@@ -41,17 +67,37 @@ body {
   background-color: #4D4D4D;
   color: white;
 }
+
+@media (min-width: 1280px).add-ad {
+    min-width: 190px;
+}
+@media (min-width: 1600px).add-ad {
+    font-size: 15px;
+    padding: 0 8px;
+}
+
 /* Add advertisement */
 .add-ad{
-  white-space: nowrap;
-  font-size:15px;
-  padding:0 8px;
-  height:100%;
-  box-sizing: border-box;
-  text-decoration: none;
-  max-width: 240px;
-  font-weight: bold;
-  background-color: hsl(353,100%,43%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      box-sizing: border-box;
+      color: hsl(0,0%,100%);
+      cursor: pointer;
+      white-space: nowrap;
+      text-decoration: none;
+      max-width: 240px;
+      min-width: 100px;
+      flex: 1 1 240px;
+      padding: 0 10px;
+      font-weight: bold;
+      font-size: 14px;
+      background-color: hsl(353,100%,43%);
+}
+
+.add-ad:hover{
+  background-color: #ae0707;
 }
 /* Column container */
 .row {
@@ -59,7 +105,6 @@ body {
   flex-wrap: wrap;
   width:1266px;
   margin:0px auto;
-  margin-top:60px;
 }
 /* Main column */
 .main{
