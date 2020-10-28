@@ -21,9 +21,75 @@
     </div>
     </div>
 
+<div class = "row">
+  <div class = "main">
+    <div class = "content2">
+      <div class = "advert">
+        <h1 class = "title-advert">Подать объявление о продаже автомобиля</h1>
+        <form class = "form">
+          <div class = "form-in">
+            <div class = "form-in-1">
+              <div class = "VIN">
+                <label>VIN или номер кузова</label>
+                <div class = "VIN-input"><input type = "text" name = "frame" id = "frame" required ></div>
+              </div>
+              <div class = "CTC">
+                <label>Номер СТС (СОР)</label>
+                <div class = "CTC-input"><input type = "text" name = "frame" id = "frame" ></div>
+              </div>
+              <div class = "mark1">
+                <label>Марка</label>
+                <select id="marks">
+                  <option disabled selected>Выберите марку</option>
+                </select>
+              </div>
+              <div class = "model1">
+                <label>Модель</label>
+              <select id="models" required>
+                <option disabled selected>Выберите модель</option>
+              </select>
+            </div>
+              <div class = "probeg">
+                <label>Пробег (км)</label>
+                <div class = "probeg-input"><input type = "tel" name = "probeg-km" id = "probeg-km" pattern = "^[ 0-9]+$" value maxlength = "6" ></div>
+              </div>
+              <div class = "color">
+                <label>Цвет машины</label>
+                <div class = "c-color-input"><input type = "color" name = "c-color" id = "c-color"></div>
+              </div>
+              <div class = "description">
+                <label>Описание</label>
+                <div class = "description-input"><textarea name = "text" id = "text" cols = "100" rows = "10"></textarea></div>
+              </div>
+              <div class = "price">
+                <label>Цена</label>
+                <div class = "price-input"><input type = "tel" value maxlength = "15" required></div>
+              </div>
+              <div class = "phone">
+                <label>Телефон</label>
+                <div class = "phone-input"><input type = "tel" name = "phone1" id = "phone1" required ></div>
+              </div>
+            </div>
+          </div>
+          <button type = "submit" id = "submit-button">
+            <span class = "submit-text">Подать объявление и добавить фото</span>
+          </button>
+          <div>Размещая объявление, вы соглашаетесь
+            <a class = "c-link" target = "_blank" href = "#">с условиями оферты портала</a> и
+            <a class = "c-link" target = "_blank" href = "#"> требованиями к размещению объявлений.</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="footer-wrapper">
   <div class="footer">
+    <div class="graytext">
+      <p>SBC - сайт для размещения объявлений о продаже автомобилей.<br>
+         Здесь вы можете подать объявление бесплатно о продаже авто.<br>
+         Чтобы дать объявление о продаже автомобиля, заполните форму.</p>
+    </div>
     <div class="footer-nav">
       <div class="fncolumn1">
         <div class="c-link-container"><a class="c-link" href="page_cars.html">Автомобили</a></div>
