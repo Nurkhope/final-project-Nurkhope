@@ -36,9 +36,6 @@ body {
 
 
 /* Style the navigation bar links */
-@media (min-width: 1600px).navbar a {
-  font-size: 15px
-}
 
 .navbar a{
     display: flex;
@@ -68,14 +65,6 @@ body {
   color: white;
 }
 
-@media (min-width: 1280px).add-ad {
-    min-width: 190px;
-}
-@media (min-width: 1600px).add-ad {
-    font-size: 15px;
-    padding: 0 8px;
-}
-
 /* Add advertisement */
 .add-ad{
       display: flex;
@@ -103,7 +92,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  width:1266px;
+  width:1226px;
   margin:0px auto;
 }
 /* Main column */
@@ -115,6 +104,7 @@ body {
 .content {
   margin-right: 20px;
   flex: 1 1 690px;
+  text-align: center;
 }
 
 .content a , .salecar a , .sidebar a{
@@ -127,7 +117,6 @@ body {
 }
 
 .sidebar{
-  flex: 0 0 240px;
   max-width: 240px;
 }
 
@@ -270,6 +259,10 @@ body {
   margin-bottom: 60px;
 }
 
+.auto-manufac {
+  display:flex;
+}
+
 .auto-manufac a{
   margin-right: 15px;
 }
@@ -341,7 +334,7 @@ label{
   margin-bottom: 20px;
 }
 
-#submit-button:hover{
+#submit-button:hover, #submit-button2:hover{
   background:#db001b;
   color:white;
   cursor:pointer;
@@ -351,9 +344,100 @@ label{
   text-align: center;
   color:#8a8c93
 }
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+
+.form2{
+  display: flex;
+  border:2px solid black;
+}
+
+.mark2 , .model2 , .price2 , .year2 , #submit-button2{
+  margin:20px;
+}
+
+#submit-button2{
+  background: black;
+  color:white;
+  width:270px;
+  height: 25px;
+  border:none;
+  margin-right:0;
+}
+
+
+/*----------------------------------------------
+
+                  MEDIA
+
+------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+
   .row {
-    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0 15px;
   }
+
+}
+
+@media only screen and (max-width:992px) {
+
+  .navmain{
+    width:100%;
+  }
+
+  #car-name {
+    font-size: 19px;
+  }
+
+  span{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 36px;
+  }
+
+  h2{
+    font-size: 24px;
+  }
+
+}
+
+@media only screen and (max-width:768px) {
+
+  .sidebar {
+    display: none;
+  }
+
+  .category {
+    padding: 0 30px;
+  }
+
+  .footer {
+    padding: 0 50px;
+  }
+
+}
+
+@media  screen and (max-width:480px) {
+  #car-name {
+    font-size: 19px;
+  }
+
+  span{
+    font-size: 16px;
+  }
+
+  h1{
+    font-size: 54px;
+  }
+
+  h2{
+    font-size: 38px;
+  }
+
+@media only screen and (max-width:320px) {
+
 }
