@@ -21,12 +21,15 @@ body {
 }
 
 header {
+  width:100%;
   display:flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
   background-color: black;
   height:50px;
+  position: fixed;
+  z-index: 2;
 }
 
 .logo {
@@ -86,12 +89,12 @@ header {
 .main{
   display:flex;
   width:100%;
+  padding-top: 70px;
 }
 /* Content column */
 .content {
   margin-right: 20px;
   flex: 1 1 690px;
-  text-align: center;
 }
 
 .content a , .salecar a , .sidebar a{
@@ -230,7 +233,6 @@ header {
 
 /* Footer */
 .footer-wrapper {
-  display: flex;
   padding: 60px 20px;
   background: white;
   margin:0;
@@ -307,7 +309,7 @@ label{
   display:inline-block;
 }
 
-.VIN , .CTC , .mark1 , .model1 , .probeg , .description , .price , .phone , .color {
+.city , .motor , .transmis , .steeringwheel , .drive , .mark1 , .model1 , .probeg , .description , .price , .phone , .color {
   display:flex;
   margin-bottom:20px;
 }
@@ -350,6 +352,135 @@ label{
   margin-right:0;
 }
 
+/*CARD OF ADVERT*/
+.card-advert {
+  display: flex;
+  border: 2px solid black;
+  width: 630px;
+  height: 200px;
+  margin: 15px;
+  position: relative;
+}
+
+.card-advert img {
+  margin: 10px;
+  width: 240px;
+  height: 180px;
+  border: 1px solid black;
+}
+
+.card-info {
+  margin: 10px;
+}
+
+.br-mod-year {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.c-price {
+  border: 2px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  margin: -2px;
+}
+
+/*PAGE-ADVERT*/
+.c-a-p-title {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(28,24,25,.1);
+}
+
+.c-a-p-info {
+  display: flex;
+  /*justify-content: space-between;*/
+  width: 100%;
+  min-height: 600px;
+}
+
+.c-a-p-sidebar {
+  /*width: calc(100% - 790px);*/
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.c-a-p-price {
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.c-a-p-params {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 8px;
+}
+
+dt {
+  color: #888b94;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  padding-right: 3px;
+  }
+
+.c-a-p-params dt::after {
+  position: absolute;
+  left: 100%;
+  bottom: 4px;
+  width: 240px;
+  content: "";
+  border-bottom: 1px dotted #bbbec9;
+}
+
+.c-a-p-content {
+  margin-left: 40px;
+  min-width: 580px;
+  width: 750px;
+}
+
+#carousel img{
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+}
+#carousel img:active {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+#carousel{
+  display:flex;
+}
+#bigImage img{
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.content-desc {
+  padding: 16px 0;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(28,24,25,.1);
+}
 
 /*----------------------------------------------
 
@@ -366,13 +497,13 @@ label{
     padding: 0 15px;
   }
 
+  header {
+    width:1200px;
+  }
+
 }
 
 @media only screen and (max-width:992px) {
-
-  .navmain{
-    width:100%;
-  }
 
   #car-name {
     font-size: 19px;
@@ -390,12 +521,20 @@ label{
     font-size: 24px;
   }
 
-  .title-site  {
-    display:none;
-  }
 }
 
 @media only screen and (max-width:768px) {
+
+  header {
+    width: 1015px;
+  }
+
+  #other {
+    display:none;
+  }
+  .nav-links a {
+    font-size: 16px;
+  }
 
   .sidebar {
     display: none;

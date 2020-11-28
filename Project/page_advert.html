@@ -3,123 +3,101 @@
 <head>
   <link rel="stylesheet" href="style1.css">
   <script src="script1.js" defer></script>
-  <title>Подать объявление о продаже автомобиля,дать объявление бесплатно и без регистрации</title>
-  <meta charset="UTF-8">
+  <title>beb</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
-    <header class="header">
-        <img class="logo" src="logo.png" alt="logo">
-        <nav>
-          <ul class="nav-links">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="page_cars.html" class="active">Автомобили</a></li>
-            <li><a href="#">Запчасти</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#" id="other">Прочее</a></li>
-          </ul>
-        </nav>
-        <a href="add_ad.html"><button id="add-ad">Подать объявление</button></a>
-    </header>
+  <header class="header">
+      <img class="logo" src="logo.png" alt="logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="page_cars.html" class="active">Автомобили</a></li>
+          <li><a href="#">Запчасти</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#" id="other">Прочее</a></li>
+        </ul>
+      </nav>
+      <a href="add_ad.html"><button id="add-ad">Подать объявление</button></a>
+  </header>
 
-<div class = "row">
-  <div class = "main">
-    <div class = "content2">
-      <div class = "advert">
-        <h1 class = "title-advert">Подать объявление о продаже автомобиля</h1>
-        <form class = "form">
-          <div class = "form-in">
-            <div class = "form-in-1">
-              <div class = "city">
-                <label>Город</label>
-                <div class = "city-input"><input type = "text" required ></div>
-              </div>
-              <div class = "motor">
-                <label>Объем двигателя</label>
-                <div class = "motor-input"><input type = "number" min = "0.1" max = "10.0" step = "0.01"></div>
-              </div>
-              <div class = "transmis">
-                <label>Коробка передач</label>
-                  <select id="transmis-input">
-                    <option disabled selected>КПП</option>
-                    <option value="mechanika">механика</option>
-                    <option value="AKPP">АКПП</option>
-                    <option value="avtomat">автомат</option>
-                    <option value="tiptronik">типтроник</option>
-                    <option value="variator">вариатор</option>
-                    <option value="robot">робот</option>
-                  </select>
-              </div>
-              <div class = "steeringwheel">
-                <label>Руль</label>
-                <select id="wheel-input">
-                  <option disabled selected>Расположение руля</option>
-                  <option value="right">справа</option>
-                  <option value="left">слева</option>
-                </select>
-              </div>
-              <div class = "drive">
-                <label>Привод</label>
-                <select id="wheel-input">
-                  <option disabled selected>Привод</option>
-                  <option value="4WD">4WD</option>
-                  <option value="forward">передний привод</option>
-                  <option value="backward">задний привод</option>
-                </select>
-              </div>
-              <div class = "mark1">
-                <label>Марка</label>
-                <select id="marks">
-                  <option disabled selected>Выберите марку</option>
-                </select>
-              </div>
-              <div class = "model1">
-                <label>Модель</label>
-              <select id="models" required>
-                <option disabled selected>Выберите модель</option>
-              </select>
+  <div class = "row">
+    <div class = "main">
+      <div class = "content">
+        <h1 class="c-a-p-title">
+        <span class="c-a-p-brand">Volkswagen</span>
+        <span class="c-a-p-model">Tiguan</span>
+        <span class="c-a-p-year">2013 года</span>
+        </h1>
+
+        <section class="c-a-p-info">
+          <div class="c-a-p-sidebar">
+            <div class="c-a-p-price">7 850 000 ₸</div>
+            <div class="c-a-p-params">
+              <dl class>
+                <dt class="val-title" title="Город"><span>Город</span></dt>
+                <dd class="val">Атырау</dd>
+              </dl>
+              <dl class>
+                <dt class="val-title" title="Объем двигателя"><span>Объем двигателя, л</span></dt>
+                <dd class="val">2.0 (бензин)</dd>
+              </dl>
+              <dl class>
+                <dt class="val-title" title="Пробег"><span>Пробег</span></dt>
+                <dd class="val">28 568 км</dd>
+              </dl>
+              <dl class>
+                <dt class="val-title" title="Коробка передач"><span>Коробка передач</span></dt>
+                <dd class="val">автомат</dd>
+              </dl>
+              <dl class>
+                <dt class="val-title" title="Руль"><span>Руль</span></dt>
+                <dd class="val">слева</dd>
+              </dl>
+              <dl class>
+                <dt class="val-title" title="Цвет"><span>Цвет</span></dt>
+                <dd class="val">серебристый</dd>
+              </dl>
+              <dl class>
+                <dt class="val-title" title="Город"><span>Привод</span></dt>
+                <dd class="val">4WD</dd>
+              </dl>
             </div>
-              <div class = "probeg">
-                <label>Пробег (км)</label>
-                <div class = "probeg-input"><input type = "tel" name = "probeg-km" id = "probeg-km" pattern = "^[ 0-9]+$" value maxlength = "6" ></div>
+            </div>
+          <div class="c-a-p-content">
+            <div class="content-gallery">
+              <div id="bigImage">
+                <img src="tiguan_advert.jpg"/>
               </div>
-              <div class = "color">
-                <label>Цвет машины</label>
-                <div class = "c-color-input"><input type = "color" name = "c-color" id = "c-color"></div>
+              <div id="carousel">
+                    <img id="i1" src="tiguan_advert.jpg"/>
+                    <img id="i2" src="https://www.cstatic-images.com/car-pictures/xl/USC60AUC021B021001.png"/>
+                    <img id="i3" src="https://www.mercedes-benz.ru/content/media_library/hq/hq_mpc_reference_site/passenger_cars_ng/new_cars/models/gle-class/c292/modeloverview20/271x124/amgmodel_overview_mercedes-benz-gle-c292_mercedes-amg-gle63s4matic_271x124_11-2015_jpg.object-Single-MEDIA.tmp/amgmodel_overview_mercedes-benz-gle-c292_mercedes-amg-gle63s4matic_271x124_11-2015.jpg"/>
+                    <img id="i4" src="https://s.auto.drom.ru/i24207/c/photos/fullsize/daewoo/nexia/daewoo_nexia_695410.jpg"/>
+                    <img id="i5" src="http://st.motortrend.com/uploads/sites/10/2015/09/2015-Volkswagen-Touareg-front-view.jpg"/>
               </div>
-              <div class = "description">
-                <label>Описание</label>
-                <div class = "description-input"><textarea name = "text" id = "text" cols = "100" rows = "10"></textarea></div>
-              </div>
-              <div class = "price">
-                <label>Цена</label>
-                <div class = "price-input"><input type = "tel" value maxlength = "15" required></div>
-              </div>
-              <div class = "phone">
-                <label>Телефон</label>
-                <div class = "phone-input"><input type = "tel" name = "phone1" id = "phone1" required ></div>
-              </div>
+            </div>
+            <div class="content-desc">
+              <h3>Описание</h3>
+              <p>литые диски, тонировка, обвес, противотуманки, корректор фар, обогрев зеркал,
+                 дневные ходовые огни, комбинированный, аудиосистема, CD, MP3, USB, встроенный телефон, bluetooth, полный электропакет,
+                  ГУР, центрозамок, ABS, кондиционер, бортовой компьютер, датчик дождя, сигнализация, автозапуск, подогрев сидений,
+                   налог уплачен, техосмотр пройден, вложений не требует</p>
             </div>
           </div>
-          <button type = "submit" id = "submit-button">
-            <span class = "submit-text">Подать объявление и добавить фото</span>
-          </button>
-          <div>Размещая объявление, вы соглашаетесь
-            <a class = "c-link" target = "_blank" href = "#">с условиями оферты портала</a> и
-            <a class = "c-link" target = "_blank" href = "#"> требованиями к размещению объявлений.</a></div>
-        </form>
+        </section>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="footer-wrapper">
-  <div class="footer">
+    <div class="footer-wrapper">
+    <div class="footer">
     <div class="graytext">
-      <p>SBC - сайт для размещения объявлений о продаже автомобилей.
-         Здесь вы можете подать объявление бесплатно о продаже авто.
-         Чтобы дать объявление о продаже автомобиля, заполните форму.</p>
+      <p>Вы смотрите раздел <strong>Продажа Фольксваген Тигуан.</strong></p>
+      <p>В разделе "Продажа авто" представлены цены на новые и подержанные автомобили Фольксваген Тигуан.</p>
+      <p>Новые автомобили, с пробегом и
+          без - широкий выбор для того, чтобы купить Фольксваген Тигуан.</p>
     </div>
     <div class="footer-nav">
       <div class="fncolumn1">
@@ -188,8 +166,8 @@
     <div class="end">
     <span>© 2020–2020</span>
     </div>
-  </div>
-</div>
+    </div>
+    </div>
 
 </body>
 </html>
