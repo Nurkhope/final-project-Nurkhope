@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="style1.css">
-  <script src="script1.js" defer></script>
+  <script src="script3.js" defer></script>
   <title>Продажа авто в Казахстане.Авторынок Казахстана на одном сайте</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
   <body>
 
   <header class="header">
-      <img class="logo" src="logo.png" alt="logo">
+      <img class="logo" src="cars_photo/logo.png" alt="logo">
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Главная</a></li>
@@ -27,60 +27,14 @@
     <div class = "main">
       <div class = "content">
         <h1 class = "title-advert">Продажа автомобилей</h1>
-        <div class = "search-adverts">
-          <form class = "form2">
-            <div class = "mark2">
-              <select id="marks">
-                <option disabled selected>Марка</option>
-              </select>
-            </div>
-            <div class = "model2">
-            <select id="models">
-              <option disabled selected>Модель</option>
-            </select>
+        <button id="load">Показать объявления</button>
+          <div>
+              <button id="sortByMaker">Сортировка по названию</button>
+              <button id="sortByPrice">Сортировка по цене</button>
           </div>
-            <div class = "price2">
-              <div class = "price-input-from"><input type = "tel" placeholder = "Цена от, тенге" required></div>
-              <div class = "price-input-to"><input type = "tel" maxlength = "16" placeholder = "до"></div>
-            </div>
-            <div class = "year2">
-              <div class = "year-input-from"><input type="number" min="1900" max="2020" placeholder="Год от"></div>
-              <div class = "year-input-to"><input type="number" min="1900" max="2020" placeholder="до"></div>
-            </div>
-            <button type = "submit" id = "submit-button2">
-              <span class = "submit-text">Показать</span>
-            </button>
-          </form>
+
+      <div id="adverts">
       </div>
-      <div class="adverts">
-        <a href="page_advert.html">
-          <div class="card-advert">
-            <img src="tiguan_advert.jpg"/>
-            <section class="card-info">
-              <div class="br-mod-year"><strong>Volkswagen Tiguan, 2013</strong></div></a>
-              <div class="c-desc">2.0 л (170 л.с.), бензин, автомат, 4WD, 29 тыс.км</div>
-              <div class="c-price">7 850 000 ₸</div>
-            </section>
-          </div>
-        <a href="https://moscow.drom.ru/volkswagen/tiguan/40453358.html">
-        <div class="card-advert">
-          <img src="tiguan_advert.jpg"/>
-          <section class="card-info">
-            <div class="br-mod-year"><strong>Volkswagen Tiguan, 2013</strong></div></a>
-            <div class="c-desc">2.0 л (170 л.с.), бензин, автомат, 4WD, 29 тыс.км</div>
-            <div class="c-price">7 850 000 ₸</div>
-          </section>
-        </div>
-        <a href="https://moscow.drom.ru/volkswagen/tiguan/40453358.html">
-        <div class="card-advert">
-          <img src="tiguan_advert.jpg"/>
-          <section class="card-info">
-            <div class="br-mod-year"><strong>Volkswagen Tiguan, 2013</strong></div></a>
-            <div class="c-desc">2.0 л (170 л.с.), бензин, автомат, 4WD, 29 тыс.км</div>
-            <div class="c-price">7 850 000 ₸</div>
-          </section>
-        </div>
-    </div>
     </div>
   </div>
 

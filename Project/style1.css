@@ -353,7 +353,7 @@ label{
 }
 
 /*CARD OF ADVERT*/
-.card-advert {
+/*.card-advert {
   display: flex;
   border: 2px solid black;
   width: 630px;
@@ -386,6 +386,50 @@ label{
   position: absolute;
   margin: -2px;
 }
+*/
+#load {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  background-color: #db001a;
+  color: white;
+  border: none;
+}
+
+#sortByMaker, #sortByPrice {
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+  background: black;
+  color: white;
+  border: none;
+}
+
+#adverts .card-advert{
+  border:1px solid red;
+  display:flex;
+  width: 500px;
+  height: 60px;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+}
+#adverts .card-advert .c-mark{
+  flex-grow: 1;
+}
+#adverts .card-advert .c-model{
+  flex-grow: 2;
+}
+#adverts .card-advert .c-img{
+  flex-grow: 3;
+  width:100px;
+  height:40px;
+}
+ #adverts .card-advert .c-price{
+  font-weight: bold;
+  padding-right: 20px;
+}
+
 
 /*PAGE-ADVERT*/
 .c-a-p-title {
